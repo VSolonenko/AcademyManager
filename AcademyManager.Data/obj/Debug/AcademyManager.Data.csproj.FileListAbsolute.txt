@@ -1,0 +1,9 @@
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Data\bin\Debug\AcademyManager.Data.dll
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Data\bin\Debug\AcademyManager.Data.pdb
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Data\obj\Debug\AcademyManager.Data.csproj.CoreCompileInputs.cache
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Data\obj\Debug\AcademyManager.Data.dll
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Data\obj\Debug\AcademyManager.Data.pdb
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Data\bin\Debug\AcademyManager.Business.Models.dll
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Data\bin\Debug\AcademyManager.Business.Models.pdb
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Data\obj\Debug\AcademyManager.Data.csprojAssemblyReference.cache
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Data\obj\Debug\AcademyManager.Data.csproj.CopyComplete

@@ -1,0 +1,13 @@
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Data.LocalFileData\bin\Debug\AcademyManager.Data.LocalFileData.dll
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Data.LocalFileData\bin\Debug\AcademyManager.Data.LocalFileData.pdb
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Data.LocalFileData\obj\Debug\AcademyManager.Data.LocalFileData.csproj.CoreCompileInputs.cache
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Data.LocalFileData\obj\Debug\AcademyManager.Data.LocalFileData.dll
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Data.LocalFileData\obj\Debug\AcademyManager.Data.LocalFileData.pdb
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Data.LocalFileData\bin\Debug\AcademyManager.Business.Models.dll
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Data.LocalFileData\bin\Debug\AcademyManager.Data.dll
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Data.LocalFileData\bin\Debug\Ninject.dll
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Data.LocalFileData\bin\Debug\AcademyManager.Business.Models.pdb
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Data.LocalFileData\bin\Debug\AcademyManager.Data.pdb
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Data.LocalFileData\bin\Debug\Ninject.xml
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Data.LocalFileData\obj\Debug\AcademyManager.Data.LocalFileData.csproj.CopyComplete
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Data.LocalFileData\obj\Debug\AcademyManager.Data.LocalFileData.csprojAssemblyReference.cache

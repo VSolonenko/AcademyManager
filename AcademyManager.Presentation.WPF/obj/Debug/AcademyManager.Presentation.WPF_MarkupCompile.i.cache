@@ -1,0 +1,20 @@
+﻿AcademyManager.Presentation.WPF
+
+
+winexe
+C#
+.cs
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Presentation.WPF\obj\Debug\
+AcademyManager.Presentation.WPF
+none
+false
+DEBUG;TRACE
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Presentation.WPF\App.xaml
+15-489796349
+
+531864657007
+18-2081340722
+Views\AddMaterialWindow.xaml;Views\AddTaskWindow.xaml;Views\LoginWindow.xaml;Views\MainWindow.xaml;Views\MaterialDetailsWindow.xaml;Views\MaterialsToStudentWindow.xaml;Views\RegisterWindow.xaml;Views\SolutionWindow.xaml;Views\StudentDetailsWindow.xaml;Views\StudentWindow.xaml;Views\TaskDetailsWindow.xaml;Views\TaskToStudentWindow.xaml;Views\UserControls\RegisterUserControl.xaml;Views\UserControls\StudentInfoUserControl.xaml;Views\UserControls\TeacherInfoUserControl.xaml;
+
+True
+

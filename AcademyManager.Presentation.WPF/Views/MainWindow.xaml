@@ -1,0 +1,79 @@
+﻿<viewservice:WindowView 
+        x:ClassModifier="internal"
+        xmlns:viewservice="clr-namespace:AcademyManager.Presentation.WPF.Common.MVVM.ViewService"
+        x:Class="AcademyManager.Presentation.WPF.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewmodels="clr-namespace:AcademyManager.Presentation.WPF.ViewModels"
+    xmlns:usercontrols="clr-namespace:AcademyManager.Presentation.WPF.Views.UserControls"
+    mc:Ignorable="d" Background="#FF252526"
+        Title="MainWindow" MinHeight="420" MinWidth="920" WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type viewmodels:TeacherInfoViewModel}">
+            <usercontrols:TeacherInfoUserControl/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewmodels:StudentInfoViewModel}">
+            <usercontrols:StudentInfoUserControl/>
+        </DataTemplate>
+    </Window.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Name="TPanel" Visibility="Hidden" Orientation="Horizontal" Margin="20, 5" HorizontalAlignment="Left">
+                <Button Command="{Binding OpenAddMaterailWindow}" BorderThickness="0"  Background="Transparent" Grid.Column="0"  VerticalContentAlignment="Stretch" VerticalAlignment="Center" Margin="2, 5">
+                    <Border BorderThickness="1" CornerRadius="10" Padding="10, 2" Background="DodgerBlue">
+                        <TextBlock Text="Add material" FontSize="20" Foreground="White" FontWeight="SemiBold" />
+                    </Border>
+                </Button>
+
+                <Button Command="{Binding OpenAddTaskWindow}" BorderThickness="0"  Background="Transparent" Grid.Column="0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" VerticalAlignment="Center" Margin="2, 5">
+                    <Border BorderThickness="1" CornerRadius="10" Padding="10, 2" Background="DodgerBlue">
+                        <TextBlock Text="Add Task" FontSize="20" Foreground="White" FontWeight="SemiBold" />
+                    </Border>
+                </Button>
+                <Button Command="{Binding OpenAddStudentWindow}" BorderThickness="0"  Background="Transparent" Grid.Column="0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" VerticalAlignment="Center" Margin="2, 5">
+                    <Border BorderThickness="1" CornerRadius="10" Padding="10, 2" Background="DodgerBlue">
+                        <TextBlock Text="Add Student" FontSize="20" Foreground="White" FontWeight="SemiBold" />
+                    </Border>
+                </Button>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Name="MPanel" Visibility="Hidden" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20, 5">
+                <TextBlock Text="{Binding UserName}" FontSize="20" Foreground="DodgerBlue" FontWeight="SemiBold" VerticalAlignment="Center" Margin="10, 0"/>
+                <Button Command="{Binding Logout}" BorderThickness="0" Background="Transparent" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Right" Margin="20, 5">
+                    <Border BorderThickness="1" CornerRadius="10" Padding="20, 2" Background="DodgerBlue">
+                        <TextBlock Text="Log out" FontSize="16" Foreground="White" FontWeight="SemiBold" />
+                    </Border>
+                </Button>
+            </StackPanel>
+            
+           
+            <StackPanel Name="LogRegStackPanel" Orientation="Horizontal" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="20, 5">
+                <Button Command="{Binding OpenLoginWindow}"  BorderThickness="0"  Background="Transparent" Margin="5">
+                    <Border BorderThickness="1" CornerRadius="10" Padding="20, 2" Background="DodgerBlue">
+                        <TextBlock Text="Log in" FontSize="20" Foreground="White" FontWeight="SemiBold" />
+                    </Border>
+                </Button>
+                <Button Command="{Binding OpenRegisterWindow}" BorderThickness="0"  Background="Transparent" Margin="5">
+                    <Border BorderThickness="1" CornerRadius="10" Padding="10, 2" Background="DodgerBlue">
+                        <TextBlock Text="Register" FontSize="20" Foreground="White" FontWeight="SemiBold" />
+                    </Border>
+                </Button>
+            </StackPanel>
+
+        </Grid>
+        <ContentControl Content="{Binding Current}" Grid.Row="1" Grid.ColumnSpan="2" Margin="20"/>
+    </Grid>
+</viewservice:WindowView>

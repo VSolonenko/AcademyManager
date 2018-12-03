@@ -1,0 +1,13 @@
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.EducationMaterialsManager\bin\Debug\AcademyManager.Business.EducationMaterialsManager.dll
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.EducationMaterialsManager\bin\Debug\AcademyManager.Business.EducationMaterialsManager.pdb
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.EducationMaterialsManager\bin\Debug\AcademyManager.Business.Models.dll
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.EducationMaterialsManager\bin\Debug\AcademyManager.Business.Models.pdb
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.EducationMaterialsManager\obj\Debug\AcademyManager.Business.EducationMaterialsManager.csprojAssemblyReference.cache
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.EducationMaterialsManager\obj\Debug\AcademyManager.Business.EducationMaterialsManager.csproj.CoreCompileInputs.cache
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.EducationMaterialsManager\obj\Debug\AcademyManager.Business.EducationMaterialsManager.csproj.CopyComplete
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.EducationMaterialsManager\obj\Debug\AcademyManager.Business.EducationMaterialsManager.dll
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.EducationMaterialsManager\obj\Debug\AcademyManager.Business.EducationMaterialsManager.pdb
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.EducationMaterialsManager\bin\Debug\Ninject.dll
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.EducationMaterialsManager\bin\Debug\Ninject.xml
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.EducationMaterialsManager\bin\Debug\AcademyManager.Data.dll
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.EducationMaterialsManager\bin\Debug\AcademyManager.Data.pdb

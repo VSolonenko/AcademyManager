@@ -1,0 +1,45 @@
+﻿<viewservice:WindowView
+    x:ClassModifier="internal"
+    xmlns:viewservice="clr-namespace:AcademyManager.Presentation.WPF.Common.MVVM.ViewService"
+    x:Class="AcademyManager.Presentation.WPF.Views.MaterialsToStudentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AcademyManager.Presentation.WPF.Views"
+        mc:Ignorable="d"
+      Background="#FF252526"
+        Title="MaterialsToStudentWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Foreground="White" Margin="20, 5" Text="Укажите материалы" FontWeight="SemiBold" FontSize="18"/>
+
+        <Border Grid.Row="1" Margin="20" Padding="5" BorderThickness="2" BorderBrush="DodgerBlue" CornerRadius="20">
+            <ListBox ItemsSource="{Binding Materials}" Background="Transparent" BorderThickness="0">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Foreground="White" Text="{Binding EducationMaterial.Theme}" Margin="10, 2"/>
+                            <CheckBox IsChecked="{Binding IsSelected}" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Border>
+
+
+        <Button Command="{Binding Apply}" BorderThickness="0" Background="Transparent" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Right" Margin="20, 5">
+            <Border BorderThickness="1" CornerRadius="10" Padding="20, 2" Background="DodgerBlue">
+                <TextBlock Text="Apply" FontSize="16" Foreground="White" FontWeight="SemiBold" />
+            </Border>
+        </Button>
+    </Grid>
+</viewservice:WindowView>

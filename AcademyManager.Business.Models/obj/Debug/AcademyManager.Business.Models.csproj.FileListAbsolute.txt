@@ -1,0 +1,9 @@
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.Models\bin\Debug\AcademyManager.Business.Models.dll
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.Models\bin\Debug\AcademyManager.Business.Models.pdb
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.Models\bin\Debug\Ninject.dll
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.Models\bin\Debug\Ninject.xml
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.Models\obj\Debug\AcademyManager.Business.Models.csprojAssemblyReference.cache
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.Models\obj\Debug\AcademyManager.Business.Models.csproj.CoreCompileInputs.cache
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.Models\obj\Debug\AcademyManager.Business.Models.csproj.CopyComplete
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.Models\obj\Debug\AcademyManager.Business.Models.dll
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.Models\obj\Debug\AcademyManager.Business.Models.pdb

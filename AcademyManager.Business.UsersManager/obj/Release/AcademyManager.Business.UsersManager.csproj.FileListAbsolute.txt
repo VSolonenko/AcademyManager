@@ -1,0 +1,13 @@
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.UsersManager\bin\Release\AcademyManager.Business.UsersManager.dll
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.UsersManager\bin\Release\AcademyManager.Business.UsersManager.pdb
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.UsersManager\bin\Release\AcademyManager.Business.Models.dll
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.UsersManager\bin\Release\AcademyManager.Data.dll
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.UsersManager\bin\Release\Ninject.dll
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.UsersManager\bin\Release\AcademyManager.Business.Models.pdb
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.UsersManager\bin\Release\AcademyManager.Data.pdb
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.UsersManager\bin\Release\Ninject.xml
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.UsersManager\obj\Release\AcademyManager.Business.UsersManager.csprojAssemblyReference.cache
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.UsersManager\obj\Release\AcademyManager.Business.UsersManager.csproj.CoreCompileInputs.cache
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.UsersManager\obj\Release\AcademyManager.Business.UsersManager.csproj.CopyComplete
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.UsersManager\obj\Release\AcademyManager.Business.UsersManager.dll
+C:\Users\Vlad\Desktop\Политех\2 курс\ООП\Курсовая работа\AcademyManager\AcademyManager.Business.UsersManager\obj\Release\AcademyManager.Business.UsersManager.pdb

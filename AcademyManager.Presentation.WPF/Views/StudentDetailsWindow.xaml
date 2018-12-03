@@ -1,0 +1,124 @@
+﻿<viewservice:WindowView
+    x:ClassModifier="internal"
+    xmlns:viewservice="clr-namespace:AcademyManager.Presentation.WPF.Common.MVVM.ViewService"
+    x:Class="AcademyManager.Presentation.WPF.Views.StudentDetailsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AcademyManager.Presentation.WPF.Views"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Background="#FF252526"
+        Title="StudentDetailsWindowViewModel" Height="520" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.ColumnSpan="2" HorizontalAlignment="Center" Orientation="Horizontal">
+            <TextBlock FontWeight="SemiBold" FontSize="18" Text="{Binding Name}"/>
+            <TextBlock FontWeight="SemiBold" FontSize="18" Text=" "/>
+            <TextBlock FontWeight="SemiBold" FontSize="18" Text="{Binding LastName}"/>
+        </StackPanel>
+
+        <TextBlock Foreground="White" Margin="5" Grid.Row="1" Text="Список материалов" HorizontalAlignment="Center" FontWeight="SemiBold" FontSize="16" />
+        <TextBlock Foreground="White" Margin="5" Grid.Row="1" Grid.Column="1" Text="Список контрольных работ" HorizontalAlignment="Center" FontWeight="SemiBold" FontSize="16" />
+
+
+        <ListView Name="List" SelectionChanged="ListView_SelectionChanged" ItemsSource="{Binding Materials}" Grid.Row="2" BorderThickness="2" BorderBrush="DodgerBlue"  Margin="10">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Материал" DisplayMemberBinding="{Binding Theme}"/>
+                    <GridViewColumn Header="Кол-во сессий" DisplayMemberBinding="{Binding SessionsCount}"/>
+                    <GridViewColumn Header="Подтемы">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <ListView SelectionChanged="ListView_SelectionChanged" ItemsSource="{Binding Parts}" Background="Transparent" BorderThickness="0">
+                                    <ListView.View>
+                                        <GridView>
+                                            <GridViewColumn Header="Название" DisplayMemberBinding="{Binding Theme}"/>
+                                            <GridViewColumn Header="Статус">
+                                                <GridViewColumn.CellTemplate>
+                                                    <DataTemplate>
+                                                        <TextBlock Text="{Binding IsCompleted}" Foreground="{Binding StatusColor}"/>
+                                                    </DataTemplate>
+                                                </GridViewColumn.CellTemplate>
+                                            </GridViewColumn>
+                                        </GridView>
+                                    </ListView.View>
+                                </ListView>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Статус">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding IsCompleted}" Foreground="{Binding StatusColor}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+
+
+        <ListView Name="TaskList" SelectionChanged="ListView_SelectionChanged" ItemsSource="{Binding Tasks}"  Grid.Row="2" Grid.Column="1" BorderThickness="2" BorderBrush="DodgerBlue"  Margin="10">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Материал" DisplayMemberBinding="{Binding Theme}"/>
+                    <GridViewColumn Header="Номер к/р" DisplayMemberBinding="{Binding TaskNumder}"/>
+                    <GridViewColumn Header="Статус">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding IsCompleted}" Foreground="{Binding StatusColor}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                                    
+                    <GridViewColumn Header="Оценка" DisplayMemberBinding="{Binding Mark}"/>
+                    <GridViewColumn Header="Решение">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Command="{Binding OpenSolution}" BorderThickness="0" Background="Transparent" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Right" Margin="2">
+                                    <Border BorderThickness="1" CornerRadius="10" Padding="20, 2" Background="DodgerBlue">
+                                        <TextBlock Text="Просмотреть" Foreground="White" FontWeight="SemiBold" />
+                                    </Border>
+                                </Button>
+                                
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+
+        <Button Command="{Binding AddMaterials}" BorderThickness="0" Background="Transparent" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center" Margin="0, 0, 0, 10">
+            <Border BorderThickness="1" CornerRadius="10" Padding="20, 2" Background="DodgerBlue">
+                <TextBlock Text="Добавить материалы" FontSize="16" Foreground="White" FontWeight="SemiBold" />
+            </Border>
+        </Button>
+
+        <Button Command="{Binding AddTasks}" BorderThickness="0" Background="Transparent" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Center" Margin="0, 0, 0, 10">
+            <Border BorderThickness="1" CornerRadius="10" Padding="20, 2" Background="DodgerBlue">
+                <TextBlock Text="Добавить контрольные" FontSize="16" Foreground="White" FontWeight="SemiBold" />
+            </Border>
+        </Button>
+
+        <Button Command="{Binding Save}" BorderThickness="0" Background="Transparent" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Right" Margin="20, 5">
+            <Border BorderThickness="1" CornerRadius="10" Padding="20, 2" Background="DodgerBlue">
+                <TextBlock Text="Save" FontSize="16" Foreground="White" FontWeight="SemiBold" />
+            </Border>
+        </Button>
+    </Grid>
+</viewservice:WindowView>

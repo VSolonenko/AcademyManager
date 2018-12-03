@@ -1,0 +1,97 @@
+﻿<viewservice:WindowView
+    x:ClassModifier="internal"
+    xmlns:viewservice="clr-namespace:AcademyManager.Presentation.WPF.Common.MVVM.ViewService"
+    x:Class="AcademyManager.Presentation.WPF.Views.SolutionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AcademyManager.Presentation.WPF.Views"
+        mc:Ignorable="d"
+          Background="#FF252526"
+        Title="SolutionWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        
+    <Window.Resources>
+        <Style x:Key="HeaderText" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+    </Window.Resources>
+    
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock Text="Студент: " Style="{StaticResource ResourceKey=HeaderText}"/>
+            <TextBlock Text="{Binding StudentName}" Style="{StaticResource ResourceKey=HeaderText}"/>
+        </StackPanel>
+
+
+        <Border Grid.Row="1" Margin="20, 10" BorderBrush="DodgerBlue" BorderThickness="2" CornerRadius="20">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                    <TextBlock Style="{StaticResource ResourceKey=HeaderText}" Text="Контрольная работа № "/>
+                    <TextBlock Style="{StaticResource ResourceKey=HeaderText}" Text="{Binding TaskNumber}"/>
+                    <TextBlock Style="{StaticResource ResourceKey=HeaderText}" Text="На тему: &quot;"/>
+                    <TextBlock Style="{StaticResource ResourceKey=HeaderText}" Text="{Binding Theme}"/>
+                    <TextBlock Style="{StaticResource ResourceKey=HeaderText}" Text="&quot;"/>
+                </StackPanel>
+
+                <Separator Grid.Row="1" BorderBrush="DodgerBlue" BorderThickness="2"/>
+
+                <ListBox BorderThickness="0" ItemsSource="{Binding Answers}" Grid.Row="2" Background="Transparent" Margin="10, 5" HorizontalContentAlignment="Stretch">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Border MinHeight="100" Background="{Binding IsCorrect}" Margin="20, 10" BorderBrush="DodgerBlue" BorderThickness="2" CornerRadius="20">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="{Binding Content}" Grid.Row="0" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16"/>
+                                    <Separator Grid.Row="1" Grid.ColumnSpan="3" BorderBrush="DodgerBlue" BorderThickness="2"/>
+                                    <StackPanel Grid.Row="2">
+                                        <TextBlock Text="Правильный ответ" HorizontalAlignment="Center" Margin="0, 5" FontWeight="SemiBold" FontSize="16"/>
+                                        <TextBlock Text="{Binding CorrectAnswer}" HorizontalAlignment="Center" Margin="0, 0, 0, 5" FontSize="16"/>
+                                    </StackPanel>
+                                    <Separator Grid.Row="1" Grid.Column="1" BorderBrush="DodgerBlue" BorderThickness="2">
+                                        <Separator.LayoutTransform>
+                                            <RotateTransform Angle="90"/>
+                                        </Separator.LayoutTransform>
+                                    </Separator>
+                                    <StackPanel Grid.Row="2" Grid.Column="2">
+                                        <TextBlock Text="Не правильный ответ" HorizontalAlignment="Center" Margin="0, 5" FontWeight="SemiBold" FontSize="16"/>
+                                        <TextBlock Text="{Binding InCorrectAnswer}" HorizontalAlignment="Center" Margin="0, 0, 0, 5" FontSize="16"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Border>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+        </Border>
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0, 0, 100, 10">
+            <TextBlock Text="Оценка:" Style="{StaticResource ResourceKey=HeaderText}"/>
+            <TextBlock Text="{Binding Mark}" Style="{StaticResource ResourceKey=HeaderText}"/>
+        </StackPanel>
+     
+    </Grid>
+</viewservice:WindowView>
